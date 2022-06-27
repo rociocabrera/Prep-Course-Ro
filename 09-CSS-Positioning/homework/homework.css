@@ -7,32 +7,67 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
-
+  display: block;
+  text-align: center;
 }
-
 
 /* Ejercicio 2: Posicionar el header */
 
 /* Acá va tu código */
-
-
+#ejercicioDos {
+  display: none;
+}
 
 /* Ejercicio 3: */
 
 /* Acá va tu código */
-
-
+#ejercicioTres {
+  margin-top: 100px;
+  padding-left: 200px;
+}
 
 /* Ejercicio 4: */
 
 /* Acá va tu código */
-
-
+#ejercicioCuatro {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
-
-
+#ejercicioCinco {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
 /* Ejercicio 6. */
+#ejercicioCinco {
+  flex-direction: row-reverse;
+}
+
+#ejercicioSiete {
+  flex-direction: column;
+}
+#elementoUno {
+  align-self: center;
+  margin-top: 15px;
+  margin-right: 200px;
+}
+#elementoDos {
+  justify-content: end;
+  margin-top: 20px;
+  margin-left: 2%;
+}
+#elementoTres {
+  align-self: flex-end;
+  margin-right: 22px;
+  margin-bottom: 43px;
+}
+#elementoCuatro {
+  align-self: center;
+  margin-bottom: 25px;
+}
