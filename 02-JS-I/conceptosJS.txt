@@ -1,0 +1,105 @@
+#Homework: Conceptos JS
+
+                              - Variables:
+Dentro de JS, las variables se definen como un espacio de guardado.
+Dicho esto, podemos pensar en una CAJA donde puedo poner herramientas para luego usarlas.
+
+Para crear una variable en JS, este utiliza palabras claves como: VAR, LET y CONST.
+Acá podemos pensar que, en una mudanza tenemos tres cajas y vamos a colocar un NOMBRE distinto a cada una para guiarnos y saber qué hay dentro de ellas. Esto nos permitirá volver y buscar qué elementos puse dentro.
+
+Podría verse así:
+
+VAR CajaMudanza 
+LET CajaRopadeCama 
+CONST CajaGuitarra 
+
+Ahora, podemos decir que, al COLOCARLE UN NOMBRE a cada caja con alguna de estas formas, estamos "DECLARANDO UNA VARIABLE" y al poner elementos dentro de ella estamos "ASIGNÁNDOLE UN VALOR".
+Para esto último, debemos utilizar el SIGNO =
+
+Ej: VAR CajaMudanza = adorno, libreta, moneda,
+
+LET CajaRopadeCama = sábanas, fundas, almohadas,
+
+CONST CajaGuitarra = guitarra
+
+
+                              *Comportamiento de uso de las VARIABLES*
+
+Para el caso de la variable VAR ó CajaMudanza, al contener cosas de distintos sectores de la casa, puedo moverla hacia distintas partes de la casa colocando herramientas, o incluso sacarlas de ella. Esta propiedad, se conoce con el término ESCOPE o alcance local y global. También es posible cambiar su nombre y los elementos dentro de ella.
+
+Por otro lado, ocurre con LET ó CajaRopadeCama donde acá también podemos cambiar el nombre y contenido pero esta caja, tiene la particularidad que sólo va a quedarse en un área de la casa por ejemplo, en una habitación hasta terminar la mudanza.
+
+Contrario es el caso de las variables CONST ó CajaGuitarra, en donde esta no podrá modificar su nombre ni su contenido, su definición es constante. 
+
+                              - Strings
+Siguiendo con el ejemplo de mudanza, podríamos pensar en los elementos que depositamos dentro de las cajas como "TIPOS DE DATOS" donde encontraremos: Strings, Numbers y Booleans.
+
+En este caso, los tipos de datos llamados STRINGS hacen referencia a cualquier palabra y/o cadena de texto/ caracteres que coloco dentro de una variable/caja. Y, para identificarlos estos siempre se colocarán entre comillas simples o dobles.
+
+Ej: VAR CajaMudanza = `LetreroFelizCumpleaños`
+
+
+
+                              - Funciones: Argumentos, `return`
+
+Ahora bien, estamos ya finalizando el armado de cajas de la mudanza y necesitamos saber qué total de cajas cargaremos en nuestro flete. Para realizar esta tarea, en JS existen las FUNCIONES.
+A través de ellas es posible realizar cálculos tales como sumas, restas, divisiones, entre otras.
+
+Mediante ellas podemos ejecutar:
+ACCIONES tales como agrupar cajas/variables (acá llamadas ARGUMENTOS o PARÁMETROS),
+DECIDIR qué quiero hacer con ellas {determinar una ACCIÓN/ escribir CÓDIGO} y conocer el 
+RESULTADO de nuestra operación a través del RETURN (retornar)
+
+Existen tres maneras válidas de escribir una función en el lenguaje de JS: 
+
+```javascript 
+function miFuncion() {} 
+var otraFuncion = function () {};
+var yOtra = () => {};
+```
+
+ Podemos ver que las funciones están compuestas por: un nombre, paréntesis, llaves y, un punto y coma sobre el final.
+
+1.  En principio inicia con una palabra clave como FUNCTION o VAR seguido de un NOMBRE que le daremos a esta función.
+
+         Ej: palabra clave: function MudanzaPerez(){}
+
+2.  Luego entre paréntesis () agregaremos todo los datos con los que trabajaremos dentro de la función. Acá es donde podremos colocar nuestras cajas/variables/argumentos/parámetros a tener en cuenta
+
+         Ej: function MudanzaPerez(CajaMudanza, CajaRopadeCama, CajaGuitarra) {} Retunr
+
+3.  Seguido, dentro de las LLAVES o CORCHETES colocaremos nuestro código, es decir, qué es lo que queremos realizar con esos datos.  
+    Ej: calcular el total de cajas
+
+           Entonces: function MudanzaPerez(CajaMudanza, CajaRopadeCama, CajaGuitarra) {Sumar total de cajas} Return
+
+4.  Al colocar RETURN al final de nuestra función, este nos estaría dando el resultado de nuestro cálculo, en este caso el total de la suma de las cajas. 
+
+        Ej: function MudanzaPerez(CajaMudanza, CajaRopadeCama, CajaGuitarra) {Sumar total de cajas}
+        Return suma: 3 cajas
+
+
+                                     - Declaraciones `if`
+  Ahora, supongamos que el transporte donde llevaremos las cajas de la mudanza es un vehículo chico y debemos hacer varios viajes debido al peso de ellas. 
+  Para este caso podemos solicitar la ayuda de Juan, nuestro chofer, quien podrá controlar a través de una balanza, si el peso de la caja es "adecuado (if) o no (else)" para transportar. Teniendo en cuenta que transportaremos cajas con un peso de no más de 10 kg. 
+  
+  Para realizar esta tarea, podemos utilizar las denominadas funciones con **controladores de flujo**
+  Para esto, el lenguaje JS utiliza palabras claves como `if`que se traduce como "si, tal cosa" y la palabra `else`que se traduce como "sino, tal cosa" /acción. 
+  Esta función va a traer como resultado (RETURN) un verdadero (TRUE) si una caja pesa menos de 10kg, por lo tanto, podrá ser trasladada. Y resultado falso (FALSE) para aquella caja que tenga un peso mayor a 10kg, por lo tanto no podrá ser trasladada.
+  
+
+ Entonces:
+
+ Ej: function MudanzaPerez(peso){
+ if (peso < 10) {
+ return true;
+ }
+ return false; }
+
+ MudanzaPerez(9); // true
+ MudanzaPerez(12); // false
+
+
+
+                             - Valores booleanos (`true`, `false`)
+ Así como existe resultado para if y else, dando true o false en el ejemplo anterior. Dentro de JS, existen otro tipo de datos como son los DATOS BOOLEANOS, en donde éstos determinan a través de DOS OPCIONES si el producto final de nuestro cálculo es, positivo o negativo, true o false, si es 1 o 0, o mismo si está activo o inactivo. 
