@@ -1,0 +1,144 @@
+
+                                        ARRAYS
+
+Los Arrays también llamados arreglos dentro del lenguaje JS se utiliza para armar listas 
+como por ejemplo, una lista donde escribo alimentos que necesito para ir al supermercado. 
+Así, para comenzar a escribir nuestra lista tenemos que contar con un lápiz y un papel, en JS tenemos que 
+declarar primero una variable y luego asignar un par de brackets, también conocidos como corchetes.
+Entonces, nuestro lápiz seria nuestra variable y nuestro papel, sería el par de corchetes. 
+
+Por ejemplo:
+
+            let listasupermercado = [] 
+            (ESTO ES UN ARRAY sin elementos: ARRAY VACIO)
+
+Ahora bien, podemos tener un papel sin anotaciones, es decir una lista VACIA como es el caso del array de 
+arriba, como ya tener una lista con anotaciones ó mejor dicho con *elementos* dentro de nuestro ARRAY.
+
+
+            let listasupermercado = [arroz, fideos, queso] 
+            (ESTO ES UN ARRAY con elementos: ARRAY LITERAL)
+
+
+Un dato importante, es el número de alimentos/**elementos** que tenemos en nuestra lista. Si bien, en nuestra
+última lista podemos ver que contiene 3 elementos, los arrays **empiezan a contar desde el índice cero (0)**.
+Por lo tanto, diríamos que:
+
+            let listasupermercado = [arroz, fideos, queso] 
+                            índice:    0  ,   1   ,   2  
+
+Tenemos 3 elementos que en el primer lugar de nuestra lista se encuentra el alimento arroz, y 
+se ubica en el índice cero, en el segundo lugar se encuentra el alimento fideos con el índice 1, 
+y en el tercer lugar de nuestra lista se encuentra el queso, con índice 2, así sucesivamente.
+
+// Otra forma de comprender esta parte y no confundirnos, podemos pensar en el índice de un libro que contiene
+varios capítulos y el primer capítulo se encuentra en el índice con el número 0, el siguiente en 1, etc. 
+
+Así como existen, las sumas y restas, en los arrays existen formas de realizar cálculos a través de palabras.
+Ejemplo, length, push, pop, unshift, shift, bucle for, son algunas de las palabras claves que nos van a permitir 
+acceder a los arrays. 
+
+DEFINICIONES: 
+.length: Significa "longitud" en inglés. Éste método nos permite saber la longitud de nuestra lista (array).
+.push: Significa "empujar" en inglés. Éste método nos permite sumar un elemento al final de nuestra lista (array).
+.pop: Significa "explotar" en inglés. Éste método nos permite eliminar el último elemento de nuestra lista (array).
+.unshift: Significa "desarmar" en inglés. Éste método nos permite sumar un elemento al inicio de nuestra lista (array).
+.shift: Significa "cambiar" en inglés. Éste método nos permite eliminar un elemento al inicio de nuestra lista (array).
+
+** .push y .unshift: tienen en común la operación sumar, aunque cambia la posición donde se ejecuta.
+** .pop y .shift: tienen en común la operación eliminar (restar), aunque cambia la posición donde se ejecuta.
+
+
+                     ¿Cómo utilizo/ejecuto estos métodos en mi lista/array?
+
+Muy simple, agrego el método a nuestra lista. En este caso llamamos a la variable que ya declaramos más 
+arriba ya con sus elementos integrados.
+
+                                    // METODO LENGTH :
+listasupermercado.length
+devuelve 3
+
+La consola nos devolverá el número 3 visto que hay 3 elementos en nuestra lista: arroz, fideos, queso. 
+Aunque no olvidemos que, arroz se ubica en el índice 0, fideos índice 1, queso índice 2. 
+
+                                    // METODO PUSH : 
+En este caso, agrego el método a nuestra lista + el ítem/elemento que quiero adicionar 
+entre paréntesis() y, un punto y coma al final.
+
+listasupermercado.push(1);
+devuelve 4 
+
+Visto que hay ahora se sumó un cuarto elemento al final de nuestra lista: arroz, fideos, queso, 1 aunque
+no olvidemos que, arroz se ubica en el índice 0, fideos índice 1, queso índice 2, 1 índice 3. 
+
+Recordatorio: En los arrays, como dijimos al principio podemos colocar cualquier tipo de dato, 
+así como los elementos arroz, fideos y queso corresponden, como ya vimos anteriormente, al tipo de dato 
+strings (siempre entre comillas), también podemos agregar números, funciones, booleanos, entre otros. 
+Por lo tanto nuestro ARRAY se vería algo así:
+
+listasupermercado = ["arroz", "fideos", "queso", 1] 
+
+
+                                    // METODO POP : 
+En este caso, agrego el método a nuestra lista + paréntesis().
+
+listasupermercado.pop()
+devuelve 1 
+
+Visto que es el último elemento de la lista que se elimina.
+
+
+                                    // METODO UNSHIFT : 
+Misma ejecución que en push. En este ejemplo vamos a agregar un dato de tipo booleano.
+
+listasupermercado.unshift(true);
+devuelve 4 
+
+Agrega elemento al inicio del array. Se vería de la siguiente manera:
+
+listasupermercado = [true, "arroz", "fideos", "queso"] 
+
+
+                                    // METODO SHIFT : 
+Misma ejecución que en pop.
+
+listasupermercado.shift()
+devuelve true
+
+Visto que es el primer elemento de la lista que se elimina. 
+
+
+                                    // BUCLE FOR EN ARRAY : 
+
+Recordemos que la tarea del bucle es repetir un bloque de código hasta que se cumple la condición de frenado.
+A modo de repaso, para declarar el bucle for éste consta de tres pasos.
+
+1) variable: contabiliza la cantidad de repeticiones. ( var i = 0; )
+2) condición de frenado: frena el bucle. ( i < 100;)
+3) incremento: adiciona un valor al resultado del bucle. ( i++ (1)) 
+
+
+** En este caso, cuando se ejecute un bucle dentro del array, se utiliza el método legth como punto de frenado.
+Ejemplo: 
+            let listasupermercado = ["arroz", "fideos", "queso"] 
+            for (let i= 0; i < listasupermercado.length; i++) {
+                console.log(listasupermercado[i])
+            }
+            - "arroz"
+            - "fideos"
+            - "queso"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
