@@ -1,0 +1,81 @@
+ En Javascript los *Objetos son una colección de datos relacionados que nos aportan información acerca de algo, o alguien.
+ Se conforma de propiedades (variables) y métodos (funciones).   
+ Por jemplo, información de: una persona, un auto o una casa. A su vez, estas propiedades presentan una asociación entre el 
+ nombre y el valor de ese objeto.
+
+ Empezaremos poniendo como ejemplo a una persona, a quien le daremos nombre y valor a cada una de las propiedades que lo conforman. 
+ 
+ Para declarar un objeto, es necesario declarar una variable seguido de un nombre, el signo igual y un par de llaves. Para el ejemplo, 
+ utilizaremos la variable CONST. 
+
+ var persona = {}                 (Esto es un objeto vacío)
+
+ const persona = {                (Esto es un objeto con sus componentes)
+	nombre: Antonia,                               (sting)
+	edad: 12,                                      (number)
+    hermanxs: true,								   (boolean)
+	hobbies:[bailar, estudiar, cantar],		       (array)
+	saludo: function (){									   (function)
+		console.log('Hola soy Antonia')            
+	}
+ }
+ 
+ Las *Propiedades nos aportan datos de la Persona como su nombre, edad, si tiene hermanxs o no, sus hobbies, entre otros. 
+ Y, cada respuesta de la prodiedad es un dato de valor dentro del objeto.
+
+ En este caso:  
+                 nombre (dos puntos): Antonia,(coma).
+ 
+ Utiizamos dos puntos para separar una propiedad de un valor y colocamos una coma al finalizar de una propiedad para agregar otra, ejemplo edad. 
+ Como vemos, los objetos pueden contener strings, numeros, datos booleanos, arrays, funciones, entre otros datos. 
+
+ Dentro de los objetos llamamos *Métodos a las funciones. En este caso, saludo sería nuestro método dentro del objeto. 
+ 
+
+	* Bucle `for…in`
+ En Objetos el bucle for se utiliza, al igual que en arrays, para recorrer un elemento aunque difiere su sintáxis
+ al momento de ejecutarlo.
+ Siguiendo con el ejemplo de arriba recorreremos con la variable declarada let "prop" el objeto persona{}. 
+
+ 							for (let prop in persona) { aqui dentro es donde ejecuto el código}
+
+ En este ejemplo, ejecutaremos el método for al objeto persona.
+ 
+ for (let prop in persona) {
+	 console.log(prop)
+	 console.log(persona[prop])
+	 } 
+	en cada iteración devuelve el nombre de la propiedad del objeto persona a través del console.log(prop),
+	y por otro lado, el valor de la propiedad a través del console.log(persona[prop]).
+
+    (prop) = nombre                               
+	persona[prop] = 12  
+	                                    
+    (prop) = hermanxs 
+	persona[prop] = true	
+
+	(prop) = hobbies
+	persona[prop] = [bailar, estudiar, cantar],	
+
+	(prop)saludo
+	persona[prop]= function (){									  
+		console.log('Hola soy Antonia') 
+
+
+ Luego, para acceder a los datos que pertenecen al objeto podemos utilizar dos tipo de *notaciones: 
+ 1) Notación de puntos y, 
+ 2) Notación de corchetes.
+
+ 1) Notación de puntos ó Dot notation:
+ Se accede llamando por el nombre de la propiedad (.) punto, y seguido 
+ el valor asignado a esa propiedad. 
+
+ 						nombre.Antonia
+ 
+ 2) Notación de corchetes ó Bracket notation:
+ Las propiedades se acceden a través del nombre ubicado entre corchetes
+ y comillas. 
+
+ 						Persona[“nombre”]; 
+
+ En ambos casos, se verá reflejado Antonia en la respuesta de la consola.
