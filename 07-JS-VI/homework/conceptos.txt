@@ -1,0 +1,6 @@
+FUNCIONES CALLBACK
+
+Las funciones callbacks nos permiten usar o recibir como parámetros a otra función.
+Es una función que se pasa a otra función como un argumento que luego se invoca dentro de la función externa para completar algún tipo de tarea, rutina o acción. 
+
+Son una forma de asegurarnos de que un determinado código no se ejecuta hasta que otro código haya terminado de ejecutarse. 
