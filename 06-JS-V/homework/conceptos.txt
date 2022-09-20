@@ -1,0 +1,82 @@
+                                              CLASES
+
+Es una especie de plantilla que nos sirve para crear objetos de forma ya predefinida.
+
+                                              OBJETOS 
+Es una unidad dentro de un programa informático que tiene un estado y un comportamiento. Es decir que tiene una serie de datos almacenados y una serie de tareas a ejecutar con esos datos en tiempo de ejecución. 
+Los objetos se pueden crear instanciando clases pero no es la única manera, también podemos escribirlos en código o crear objetos replicando otros objetos. Los objetos interactúan entre ellos. Cada objeto puede enviar o recibir mensajes o procesar datos. 
+
+Las clases sirven para representar conceptos o entidades. Por ej. Usuario, noticia, mensaje, categoría.
+
+Básicamente sirve para representar cualquier sustantivo, cualquier entidad.
+
+Cada clase tiene definido una serie de variables y de funciones, mejor dicho de atributos y métodos.
+
+Estos métodos lo que hacen es operar con esos atributos. 
+
+Importate: Las clases sirven para crear objetos y, a cada objeto creado a partir de una clase, lo llamaremos una INSTANCIA DE LA CLASE. (Quiere decir que ya ellas pre-definen la funcionalidad que van a tener estos objetos)
+
+Ej: Nos dicen que tenemos que armar un armario y nos dan un papel de instrucciones. Este papel sería la clase (Plantilla) y el armario que hemos armado sería nuestro objeto. De esta manera podemos seguir construyendo armarios con la mismas instrucciones que hemos construido el primero.
+Es decir, podemos seguir construyendo OBJETOS a partir de una sola clase que hemos creado. 
+
+Podemos PENSAR en la clase del objeto como en el tipo de dato y en las variables. Es decir, como si la clase fuese el tipo de dato y el objeto fuese la variable. Por ejemplo, cuando tenemos el tipo de dato STRING y tenemos varias variables que son strings, el tipo string define cómo tienen que ser las variables de igual manera que la CLASE define cómo tienen que ser los objetos. Es exactamente lo mismo. 
+Para usar las funciones de una clase primero se tiene que crear un objeto de esas clase, igual que en el ejemplo del armario. Para usar un armario, primero tenemos que construir el armario, no sirve sólo tener las instrucciones.
+Los atributos y los métodos están definidos en sus clases y NO SE PUEDEN MODIFICAR. (Excepto que utilice otros lenguajes de programación como Phyton o Rubi que permite modificar y agregar más métodos y más variables a un objeto ya creado) 
+*(Las clases son una parte fundamental de la programación orientada a objetos).
+
+Ejemplo: 
+
+Class Coche {
+// atributos
+Public int numero_de_ruedas;
+Public int litros_gasolina;
+Public String modelo;
+
+// funciones o métodos
+Public void arrancar ()
+Public void acelerar()
+Public void frenar()
+}
+
+¿Cómo instanciamos el objeto de una CLASE?
+
+Auto auto1 = new Auto();
+
+¿Cómo ejecutamos uno de los métodos que tiene esa clase?
+
+auto1.arrancar();
+
+                                              CONSTRUCTORES.
+Se encarga de inicializar un objeto. Es una función o método especial que se encarga de crear un nuevo objeto. En JS se utiliza la palabra constructor: New (Keyword). 
+
+Class Coche(){
+Int numeroDeRuedas;
+
+Coche(int numeroDeRuedas){
+This.numeroDeRuedas = numeroDeRuedas;
+  }
+}
+
+// uso
+New Coche (4);
+
+A los constructores también se le pueden pasar parámetros como por ejemplo podrían ser los atributos que va a tener ese objeto. 
+
+Cuando nuestra CLASE HEREDA de otra CLASE es necesario llamar al constructor de la clase padre y esto se hace utilizando la keyword: Super. Esto ejecutará el código que tendremos en la clase padre de la clase de la que hereda nuestra clase y luego ejecutará el código que tendremos en el constructor de nuestra clase. 
+
+Importante: El método constructor es el primero que se ejecuta en cada clase cuando inicializamos un objeto y el código que pongamos ahí será el primero que se ejecuta. 
+
+                                            PROTOTYPE
+Esta propiedad que contiene un constructor por default. Se podría decir que es un mecanismo por el cual un objeto puede heredar atributos y métodos de un objeto padre. Para acceder al prototype de una función simplemente escribimos:
+
+myFunction.prototype 
+
+
+
+
+
+
+
+
+
+
