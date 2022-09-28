@@ -15,7 +15,7 @@ function mayuscula(nombre) {
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
-  return cb(cb);
+  return cb();
 }
 
 function operacionMatematica(n1, n2, cb) {
@@ -43,7 +43,11 @@ function forEach(array, cb) {
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
 
-  array.forEach(cb);
+  //array.forEach(cb);
+  //
+  array.forEach(function (i) {
+    cb(i);
+  });
 }
 
 function map(array, cb) {
@@ -52,7 +56,9 @@ function map(array, cb) {
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
 
-  let NewArray = array.map(cb);
+  let NewArray = array.map(function (a) {
+    return cb(a);
+  });
   return NewArray;
 }
 
